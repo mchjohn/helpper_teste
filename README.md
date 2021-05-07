@@ -30,10 +30,10 @@ Utilizei *EJS* para o forntend e o banco de dados *MySQL* para guardar os dados 
 
 
 
-![](D:\programacao\job_tests\helpper_teste\src\public\images\Screenshot_1.png)
+![](https://raw.githubusercontent.com/mchjohn/helpper_teste/main/src/public/images/Screenshot_1.png)
 
-![Screenshot_2](D:\programacao\job_tests\helpper_teste\src\public\images\Screenshot_2.png)
+![Screenshot_2](https://raw.githubusercontent.com/mchjohn/helpper_teste/main/src/public/images/Screenshot_2.png)
 
-![Screenshot_3](D:\programacao\job_tests\helpper_teste\src\public\images\Screenshot_3.png)
+![Screenshot_3](https://raw.githubusercontent.com/mchjohn/helpper_teste/main/src/public/images/Screenshot_3.png)
 
-![Screenshot_4](D:\programacao\job_tests\helpper_teste\src\public\images\Screenshot_4.png)
+![Screenshot_4](https://raw.githubusercontent.com/mchjohn/helpper_teste/main/src/public/images/Screenshot_4.png)
