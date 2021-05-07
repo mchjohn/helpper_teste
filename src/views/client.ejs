@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/client.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <title>Cliente</title>
+</head>
+<body>
+  <header>
+    <a href="https://helpper.com.br/a-helpper/" target="_blank">
+      <img
+        src="https://helpper.com.br/img/logos/helpper-logo.png"
+        alt="logo helpper"
+      />
+    </a>
+    <p>Teste para o programa de estágio <span>Helpper</span></p>
+  </header>
+
+  <div class="container">
+    <h2>Informações do cliente <span><%- client.name %></span></h2>
+
+    <div class="info">
+      <p class="email">E-mail: <span><%- client.email %></span></p>
+      <p>
+        CPF: <span><%- client.cpf %></span>
+        <a href="">Deletar</a>
+      </p>
+      <p>Telefone: <span><%- client.phone %></span></p>
+      <p>CEP: <span><%- client.cep %></span></p>
+      <p>Logradouro: <span><%- client.street %></span></p>
+      <p>Número: <span><%- client.number %></span></p>
+      <p>Bairro: <span><%- client.district %></span></p>
+      <p>Cidade: <span><%- client.city %></span></p>
+      <p>Estado: <span><%- client.state %></span></p>
+    </div>
+  </div>
+
+  <a href="/clientes" class="goClients">
+    Ver clientes cadastrados
+  </a>
+
+  <div class="copy">
+    <p>Copyright 2021 - <a href="">Michel John</a></p>
+  </div>
+</body>
+</html>

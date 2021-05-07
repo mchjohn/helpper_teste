@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/clients.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <title>Clientes</title>
+</head>
+<body>
+  <%- include('./partials/header.ejs') %>
+
+  <div class="container">
+    <h1>Clientes Cadastrados</h1>
+
+    <div class="clients">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Clientes</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% clients.forEach(client => { %>
+            <tr>
+              <th>
+                <%= client.id %>
+              </th>
+              <th>
+                <a href="/cliente/<%- client.id %>" class="aName">
+                  <%= client.name %>
+                </a>
+              </th>
+              <th class="delete">
+                <a href="/delete/<%- client.id %>"><button class="delete-btn">Deletar</button></a>
+                <a href="/cliente/edit/<%- client.id %>"><button class="edit-btn">Editar</button></a>
+              </th>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+    <a class="register-btn" href="/">Cadastrar novo cliente</a>
+  </div>
+
+  <%- include('./partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  margin-top: 20px;
+  color: #FFF;
+}
+
+.clients {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* TABELA */
+table {
+  background-color: #f5f5f5;
+  border-collapse: collapse;
+  margin: 0;
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+  background-color: #aeea0a;
+  font-weight: 400;
+}
+
+thead tr {
+  text-align: center;
+}
+
+thead th {
+  padding: 10px 20px;
+}
+
+tbody th {
+  padding: 10px 20px;
+  font-weight: normal;
+  color: #131313;
+}
+
+tbody a {
+  color: #131313;
+}
+
+tbody .aName {
+  padding: 20px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:hover {
+  border-bottom: 1px solid #aeea0a;
+  transition: all ease .3s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 3px solid #aeea0a;
+}
+
+tbody button {
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 8px 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+tbody button:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.delete-btn {
+  background: #FF4500;
+  margin-bottom: 4px;
+}
+
+.edit-btn {
+  background: #aeea0a;
+}
+/* TABELA */
+
+.register-btn {
+  text-align: center;
+  width: 300px;
+  background: #aeea0a;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.copy {
+  margin-top: 150px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 22px;
+  }
+
+  .clients {
+    min-width: 100%;
+  }
+
+  /* tabela */
+  table {
+    min-width: 90%;
+  }
+
+  tbody .aName {
+    padding: 2px;
+  }
+  /* tabela */
+
+  .register-btn {
+    width: 90%;
+  }
+
+  body {
+    height: 100% !important;
+  }
+
+  .copy {
+    margin-top: 100% !important;
+  }
+}

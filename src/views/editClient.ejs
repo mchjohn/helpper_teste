@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/editClient.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <title>Cliente</title>
+</head>
+<body>
+  <header>
+    <a href="https://helpper.com.br/a-helpper/" target="_blank">
+      <img
+        src="https://helpper.com.br/img/logos/helpper-logo.png"
+        alt="logo helpper"
+      />
+    </a>
+    <p>Teste para o programa de estágio <span>Helpper</span></p>
+  </header>
+
+  <div class="container">
+    <form action="/clientes/update" method="POST">
+      <input required type="hidden" name="id" value="<%- client.id %>">
+      <div class="pe">
+        <p>Edite um cliente</p>
+      </div>
+      <div class="field">
+        <input required value=<%- client.name %> type="text" 
+          name="name" id="name"
+          placeholder="Digite seu nome">
+      </div>
+      
+      <div class="field">
+        <input required value=<%- client.email %> type="email"
+            name="email" id="email"
+            placeholder="Digite seu e-mail">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.cpf %> type="text" 
+          name="cpf" id="cpf"
+          placeholder="Seu CPF">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.phone %> type="tel" n
+          ame="phone" id="phone"
+          placeholder="Seu numero de telefone">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.cep %> type="text" 
+          name="cep" id="cep"
+          placeholder="Seu CEP">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.street %> type="text" 
+          name="street" id="street"
+          placeholder="Logradouro">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.number %> type="text" 
+          name="number" id="number"
+          placeholder="Número">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.district %> type="text" 
+          name="district" id="district"
+          placeholder="Bairro">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.city %> type="text" 
+          name="city" id="city"
+          placeholder="Cidade">
+      </div>
+
+      <div class="field">
+        <input required value=<%- client.state %> type="text" 
+          name="state" id="state"
+          placeholder="Estado">
+      </div>
+
+      <button type="submit">atualizar</button>
+    </form>
+
+  </div>
+  <a href="/clientes" class="goClients">
+    Ver clientes cadastrados
+  </a>
+
+  <div class="copy">
+    <p>Copyright 2021 - <a href="">Michel John</a></p>
+  </div>
+</body>
+</html>

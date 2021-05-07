@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header img {
+  width: 120px;
+}
+
+header p {
+  font-size: 18px;
+  color: #FFF;
+}
+
+header span {
+  font-weight: bold;
+  color: #aeea0a;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px 8px;
+  }
+
+  header img {
+    width: 75px;
+  }
+  
+  header p {
+    font-size: 13px;
+    color: #FFF;
+    text-align: right;
+  }
+}

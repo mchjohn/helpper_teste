@@ -1,0 +1,135 @@
+.container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form .pe {
+  text-transform: uppercase;
+  width: 80%;
+  color: #aeea0a;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+form .field {
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#name, #email, #city, #state {
+  width: 400px;
+}
+
+.field input {
+  margin-top: 3px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
+  transition: all ease .3s;
+}
+
+.field input:hover {
+  background-color: rgba(228, 228, 228, 0.952);
+}
+
+.field input:focus {
+  border: solid 2px #aeea0a;
+}
+
+form button {
+  width: 80%;
+  background: #aeea0a;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: rgba(0, 0, 0, 0.855);
+}
+
+.goClients {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 22px;
+  float: right;
+  margin: 0 25px 20px 0;
+}
+
+.goClients:hover {
+  color: rgb(207, 207, 207);
+}
+
+.copy {
+  background-color: #2e2e2e;
+  margin-top: 3rem;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+.copy a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.alert {
+  font-size: 13px;
+  color: #ff4949;
+  margin: 2px 0 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+
+  form .pe {
+    width: 85%;
+    letter-spacing: inherit;
+    font-size: 19px;
+  }
+
+  form .field {
+    width: 85%;
+  }
+
+  form .field {
+    margin: 5px 0;
+  }
+
+  #name, #email, #city, #state {
+    width: initial;
+  }
+
+  form button {
+    width: 85%;
+  }
+
+  .goClients {
+    font-size: 18px;
+    margin: 5px 25px 5px 0;
+  }
+}

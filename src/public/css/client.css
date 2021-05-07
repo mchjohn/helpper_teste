@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header img {
+  width: 120px;
+}
+
+header p {
+  font-size: 18px;
+  color: #FFF;
+}
+
+header span {
+  font-weight: bold;
+  color: #aeea0a;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+}
+
+.container span {
+  color: #aeea0a;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.container p {
+  width: 214px;
+  color: #FFF;
+  font-weight: 400;
+  margin: 5px 10px;
+  background-color: #494949;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.email {
+  width: 90% !important;
+  text-align: center;
+  margin: 0;
+}
+
+.goClients {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 22px;
+  float: right;
+  margin: 0 25px 20px 0;
+}
+
+.goClients:hover {
+  color: rgb(207, 207, 207);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px 8px;
+  }
+
+  header img {
+    width: 75px;
+  }
+  
+  header p {
+    font-size: 13px;
+    color: #FFF;
+    text-align: right;
+  }
+
+  .container p {
+    width: 214px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .goClients {
+    font-size: 18px;
+    margin: 5px 25px 5px 0;
+  }
+}

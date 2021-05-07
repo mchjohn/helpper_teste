@@ -1,0 +1,15 @@
+.copy {
+  background-color: #2e2e2e;
+  margin-top: 3rem;
+  margin-bottom: 0 !important;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+.copy a {
+  color: #FFF;
+}
